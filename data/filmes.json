@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "titulo": "The Matrix",
+    "ano": 1999,
+    "genero": "Ficção Científica",
+    "imagem": "https://picsum.photos/seed/matrix/400/600",
+    "sinopse": "Um jovem programador descobre que o mundo em que vive é uma simulação criada por computadores."
+  },
+  {
+    "id": 2,
+    "titulo": "O Senhor dos Anéis",
+    "ano": 2001,
+    "genero": "Fantasia",
+    "imagem": "https://picsum.photos/seed/lotr/400/600",
+    "sinopse": "Um hobbit recebe a missão de destruir um anel mágico de grande poder para salvar o mundo."
+  },
+  {
+    "id": 3,
+    "titulo": "Interestelar",
+    "ano": 2014,
+    "genero": "Ficção Científica",
+    "imagem": "https://picsum.photos/seed/interstellar/400/600",
+    "sinopse": "Uma equipe de exploradores viaja através de um buraco negro no espaço para garantir a sobrevivência da humanidade."
+  },
+  {
+    "id": 4,
+    "titulo": "O Rei Leão",
+    "ano": 1994,
+    "genero": "Animação",
+    "imagem": "https://picsum.photos/seed/lionking/400/600",
+    "sinopse": "Um jovem leão enfrenta traições e desafios para assumir seu lugar de direito como rei da savana."
+  }
+]
