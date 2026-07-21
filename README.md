@@ -17,7 +17,7 @@ Next 14 (App Router), TypeScript, Tailwind, shadcn.
 
 ## Funcionalidades
 
-Listagem em cards, busca por título, favoritos (estado em memória), detalhe em `/filme/[id]`.
+Listagem em cards, filtro por nome e ano, ordenação, favoritos (memória), detalhe em `/filme/[id]`.
 
 JSON em `data/filmes.json`.
 

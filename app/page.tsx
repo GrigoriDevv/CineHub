@@ -9,7 +9,7 @@ export default function Home() {
       <header className="mb-8">
         <h1 className="font-display text-3xl sm:text-4xl">Catálogo de Filmes</h1>
         <p className="mt-2 text-muted-foreground">
-          Busque pelo título ou marque seus favoritos.
+          Filtre por nome ou ano, e marque seus favoritos.
         </p>
       </header>
 
