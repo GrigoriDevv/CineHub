@@ -6,13 +6,9 @@ export default function Home() {
 
   return (
     <main>
-      <header className="mb-8">
-        <h1 className="font-display text-3xl sm:text-4xl">Catálogo de Filmes</h1>
-        <p className="mt-2 text-muted-foreground">
-          Filtre por nome ou ano, e marque seus favoritos.
-        </p>
-      </header>
-
+      <p className="mb-6 text-muted-foreground">
+        Filtre por nome ou ano, e marque seus favoritos.
+      </p>
       <ListaFilmes filmes={filmes} />
     </main>
   );

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { FiltrosFilmes } from "@/components/filtros-filmes";
-import { FilmeCard } from "@/components/filme-card";
+import { GradeFilmes } from "@/components/grade-filmes";
 import type { Filme } from "@/types/filme";
 
 type Props = {
@@ -13,7 +13,6 @@ export function ListaFilmes({ filmes }: Props) {
   const [nome, setNome] = useState("");
   const [ano, setAno] = useState("");
   const [ordem, setOrdem] = useState("nome-asc");
-  const [favoritos, setFavoritos] = useState<number[]>([]);
 
   const anos = Array.from(new Set(filmes.map((f) => f.ano))).sort(
     (a, b) => b - a
@@ -33,12 +32,6 @@ export function ListaFilmes({ filmes }: Props) {
     return a.titulo.localeCompare(b.titulo, "pt-BR");
   });
 
-  function toggleFavorito(id: number) {
-    setFavoritos((prev) =>
-      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
-    );
-  }
-
   return (
     <div className="space-y-6">
       <FiltrosFilmes
@@ -51,20 +44,7 @@ export function ListaFilmes({ filmes }: Props) {
         anos={anos}
       />
 
-      {filtrados.length === 0 ? (
-        <p className="text-muted-foreground">Nenhum filme encontrado.</p>
-      ) : (
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {filtrados.map((filme) => (
-            <FilmeCard
-              key={filme.id}
-              filme={filme}
-              favorito={favoritos.includes(filme.id)}
-              onToggleFavorito={toggleFavorito}
-            />
-          ))}
-        </div>
-      )}
+      <GradeFilmes filmes={filtrados} />
     </div>
   );
 }
